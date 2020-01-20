@@ -8,12 +8,11 @@
 
 `p ∨ ¬q`
 
-2. 
- - p = Smith has installed central heating
- - q = Smith has sold his car
- - r = Smith has paid his mortgage
+2.  - p = Smith has installed central heating
+    - q = Smith has sold his car
+    - r = Smith has paid his mortgage
 
-`p ⇒ (q ∨ ¬r)`
+	`p ⇒ (q ∨ ¬r)`
 
 3.
  - p = The barometer falls
@@ -21,5 +20,28 @@
  - r = It will snow
 
 `p ⇒ (q ∨ r)`
+
+
+### Task 2 ###
+
+1. ((p ⇒ q) ∧ (¬((r ∨ p) ⇒ q)))
+2. (p ∨ ((¬q) ⇒ (p ∧ r)))
+3. ((p ∨ p) ⇒ (¬q))
+
+
+### Task 3 ###
+
+1.
+
+
+
+
+
+
+
+
+
+
+
 
 
