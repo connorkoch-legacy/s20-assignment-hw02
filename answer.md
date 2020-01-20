@@ -79,15 +79,15 @@
 
 1. `p ⇒ (¬q ∨ (q ⇒ p))`
 
-	[graph 1](parse-tree-1.png)
+	![graph 1](parse-tree-1.png)
 
 2. `¬p ∨ (p ⇒ q)`
 
-	[graph 2](parse-tree-2.png)
+	![graph 2](parse-tree-2.png)
 
 3. `(p ∧ q) ⇒ (¬r ∨ (q ⇒ r))`
 
-	[graph 3](parse-tree-3.png)
+	![graph 3](parse-tree-3.png)
 
 
 
