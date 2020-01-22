@@ -62,9 +62,9 @@
     Step | Claim | Justification
     -----|-------|--------------
     1 | p ⇒ q | premise
-	2 | 
-
-	TODO: How to do? 1. How are the natural deduction rules derived if they are separate from truth values? 2. What does it mean to make an assumption, and how can this assumption be made (Ex. 1.16)
+	2 | ¬q | assumption
+	3 | ¬p | *ModusTollens*(1, 2)
+	4 | ¬q ⇒ ¬p | *ImpIntro*(2-3)
 
 5.  `r, p ⇒ (r ⇒ q) ⊢ p ⇒ (q ∧ r)`
 
@@ -72,7 +72,12 @@
     -----|-------|--------------
     1 | r | premise
     2 | p ⇒ (r ⇒ q) | premise
-	3 | 
+	3 | p | assumption
+	4 | r ⇒ q | *ImpElim*(2, 3)
+	5 | r | assumption
+	6 | q | *ImpElim*(4, 5)
+	7 | q ∧ r | *AndIntro*(6, 1)
+	8 | p ⇒ (q ∧ r) | *ImpIntro*(3-7)
 
 
 ### Task 4 ###
