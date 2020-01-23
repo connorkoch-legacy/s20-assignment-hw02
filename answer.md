@@ -47,15 +47,14 @@
 	3 | p | *AndElim1*(1)
 	4 | q ∧ p | *AndIntro*(2, 3)
 
-2.  `p ⇒ (p ⇒ q), p ⊢ q`
+3.  `p ⇒ (p ⇒ q), p ⊢ q`
 
     Step | Claim | Justification
     -----|-------|--------------
     1 | p ⇒ (p ⇒ q) | premise
 	2 | p | premise
 	3 | p ⇒ q | *ImpElim*(1, 2)
-	4 | p | assumption
-	5 | q | *ImpElim*(3, 4)
+	4 | q | *ImpElim*(3, 2)
 
 4.  `p ⇒ q ⊢ ¬q ⇒ ¬p`
 
@@ -74,10 +73,9 @@
     2 | p ⇒ (r ⇒ q) | premise
 	3 | p | assumption
 	4 | r ⇒ q | *ImpElim*(2, 3)
-	5 | r | assumption
-	6 | q | *ImpElim*(4, 5)
-	7 | q ∧ r | *AndIntro*(6, 1)
-	8 | p ⇒ (q ∧ r) | *ImpIntro*(3-7)
+	5 | q | *ImpElim*(4, 1)
+	6 | q ∧ r | *AndIntro*(6, 1)
+	7 | p ⇒ (q ∧ r) | *ImpIntro*(3-7)
 
 
 ### Task 4 ###
